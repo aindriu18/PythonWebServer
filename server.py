@@ -15,7 +15,11 @@ def my_home(page_name):
     # when using render_template, flask automatically looks for a folder called templates. You need to create this.
     return render_template(page_name)
 
-
+# new route for submitting form on contact page
+#GET means broswer wants to send info. POST means browser wants to save info.
+@app.route('/submit_form', methods=['POST', 'GET'])
+def login():
+    return render_template('login.html', error=error)
 """
 Below is an example of how we would hard code our html pages
 
