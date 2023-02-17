@@ -13,7 +13,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="./static/assets/favicon.ico" rel="icon">
+  <link href="./static/assets/bitcoin.ico" rel="icon">
 
   <title>Title page</title>  
 
@@ -59,6 +59,9 @@
           
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
+              <!-- form enables us to send data to server. We do this using action attribute. -->
+              <!-- submit_form is the endpoint in server.py -->
+              <!-- action "submit" form will be posted when the "send" button is clicked on front end -->
                <form action="submit_form" method="post" class="reveal-content">
                   <div class="row">
                     <div class="col-md-7">
